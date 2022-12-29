@@ -23,14 +23,11 @@ const randomColor = () => {
 };
 
 /**
- * 生成随机HEX颜色
- * @returns 随机HEX颜色字符串
+ * 生成一个介于两者之间的随机数
+ * @param {最大值} max
+ * @param {最小值} min
+ * @returns
  */
-const randomColors = () => {
-  return (
-    "#" +
-    Math.floor(Math.random() * 0xffffff)
-      .toString(16)
-      .padEnd(6, "0")
-  );
+const random = (max, min) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 };
