@@ -11,7 +11,7 @@ const randomString = (num = 0) => {
 
 /**
  * 生成随机HEX颜色
- * @returns 随机HEX颜色字符串
+ * @returns { String } 随机HEX颜色字符串
  */
 const randomColor = () => {
   return (
@@ -24,9 +24,9 @@ const randomColor = () => {
 
 /**
  * 生成一个介于两者之间的随机数
- * @param {最大值} max
- * @param {最小值} min
- * @returns
+ * @param { Number } max 最大值
+ * @param { Number } min 最小值
+ * @returns { Number }
  */
 const random = (max, min) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
